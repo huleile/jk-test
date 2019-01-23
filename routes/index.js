@@ -19,29 +19,29 @@ router.get('/json', async (ctx, next) => {
 
 
 /**
- * @api {post} /books CreateBook
- * @apiName     创建一条书籍信息
- * @apiGroup    Book
- * @apiDescription  插入一条书籍信息
- * @apiParam (body) {String} name 书名
- * @apiParam (body) {String} author 作者
- * @apiParam (body) {String} press 出版社
+ * @api {post}        /books          CreateBook
+ * @apiName           CreateBook
+ * @apiGroup          Book
+ * @apiDescription    插入一条书籍信息
+ * @apiParam (body)   {String}  name        书名
+ * @apiParam (body)   {String}  author      作者
+ * @apiParam (body)   {String}  press       出版社
  */
 
- /**
- * @api {get} /books GetBooks
- * @apiName     获取书籍信息
- * @apiGroup    Book
- * @apiDescription  获取一条书籍信息
- * @apiParam (query) {String} name 书名
+/**
+ * @api {get}         /books          GetBooks
+ * @apiName           GetBooks
+ * @apiGroup          Book
+ * @apiDescription    获取一条书籍信息
+ * @apiParam (query)  {String}  name        书名
  */
 
-  /**
- * @api {delete} /books/:id  RemoveBook
- * @apiName     删除书籍信息
- * @apiGroup    Book
- * @apiDescription  删除一条书籍信息
- * @apiParam (param) {String} id  书籍ID
+/**
+ * @api {delete}      /books/:id      RemoveBook
+ * @apiName           RemoveBook
+ * @apiGroup          Book
+ * @apiDescription    删除一条书籍信息
+ * @apiParam (params) {String}  id          书籍ID
  */
 
 module.exports = router
