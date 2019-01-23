@@ -36,4 +36,12 @@ router.get('/json', async (ctx, next) => {
  * @apiParam (query) {String} name 书名
  */
 
+  /**
+ * @api {delete} /books/:id  RemoveBook
+ * @apiName     删除书籍信息
+ * @apiGroup    Book
+ * @apiDescription  删除一条书籍信息
+ * @apiParam (param) {String} id  书籍ID
+ */
+
 module.exports = router
