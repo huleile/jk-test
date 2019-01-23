@@ -6,7 +6,7 @@
     "start": "node bin/www",
     "dev": "./node_modules/.bin/nodemon bin/www",
     "apidoc": "apidoc -i ./routes -o ./public/doc",
-    "prd": "pm2 delete jks && pm2 start bin/www --name jks",
+    "prd": "pm2 restart jks",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
