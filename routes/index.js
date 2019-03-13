@@ -3,7 +3,7 @@ const router = new Router();
 
 router.get('/', async (ctx, next) => {
   await ctx.render('index', {
-    title: 'Hello Koa 2!'
+    title: 'Hello Koa 2 Just Test WebHooks!'
   })
 })
 
