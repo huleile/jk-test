@@ -17,5 +17,8 @@ router.get('/bar', function (ctx, next) {
  * @apiDescription    获取User详情
  * @apiParam (params) {String}  id          User ID
  */
+router.get('/:id', function (ctx, next) {
+  ctx.body = `this is the user${id} response!`
+})
 
 module.exports = router
