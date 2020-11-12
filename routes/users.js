@@ -18,7 +18,13 @@ router.get('/bar', function (ctx, next) {
  * @apiParam (params) {String}  id          User ID
  */
 router.get('/:id', function (ctx, next) {
-  ctx.body = `this is the user${id} response!`
+  const uid = ctx.params.id;
+  ctx.body = `this is the user${uid} response!`
+})
+
+router.delete("/:id", (ctx, next) => {
+  const uid = ctx.params.id;
+  ctx.body = `success remove user${uid}`
 })
 
 module.exports = router
