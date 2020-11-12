@@ -19,7 +19,7 @@ node {
                  worktileDeployRecord(
                     environmentName: "development",
                     releaseName: "release-${env.GIT_TAG}",
-                    releaseURL: "[https://at.worktile.com",]
+                    releaseURL: "https://at.worktile.com",
                     isTagged: true
                 )
             }
@@ -28,7 +28,7 @@ node {
                 worktileDeployRecord(
                     environmentName: "development",
                     releaseName: "releaseName",
-                    releaseURL: "[https://at.worktile.com"]
+                    releaseURL: "https://at.worktile.com"
                 )
             }
         }
